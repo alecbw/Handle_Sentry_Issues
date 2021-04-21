@@ -50,6 +50,8 @@ def export_all_issues_in_project(org_name, project_name):
     write_output_csv(f"{today_utc}_Sentry_Issues_{project_name}.csv", output_lod)
 
 
+# Dpcs: https://docs.sentry.io/api/events/update-an-issue/
+# THey have a bulk endpoint which I did not implement: https://docs.sentry.io/api/events/bulk-mutate-a-list-of-issues/
 def update_issues_with_string_in_title(filename, title_substr, status_to_change_to):
     issue_id_lod = read_input_csv(filename, columns=["title", "status", "id"])
 
