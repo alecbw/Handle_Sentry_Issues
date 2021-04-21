@@ -1,4 +1,3 @@
-from utility.util import ez_split
 from utility.util_local import write_output_csv, read_input_csv
 
 import os
@@ -61,6 +60,10 @@ def update_issues_with_string_in_title(filename, title_substr, status_to_change_
 
 ################################################
 
+"""
 if __name__ == "__main__":
 
+    update_issues_with_string_in_title(filename, title_substr, status_to_change_to)
 
+    export_all_issues_in_project(org_name, project_name)
+"""
